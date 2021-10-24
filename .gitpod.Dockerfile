@@ -2,11 +2,11 @@ FROM gitpod/workspace-full:latest
 
 USER gitpod
 
-RUN brew install dep
+RUN sudo brew install dep
 
 # Install util tools.
-RUN apt-get update \
- && apt-get install -y
+RUN sudo apt-get update \
+ && sudo apt-get install -y
  
  
  # Give back control
