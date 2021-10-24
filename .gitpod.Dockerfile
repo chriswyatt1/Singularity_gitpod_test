@@ -2,7 +2,7 @@ FROM gitpod/workspace-full:latest
 
 USER gitpod
 
-RUN sudo brew install dep
+RUN brew install dep
 
 # Install util tools.
 RUN sudo apt-get update \
@@ -13,4 +13,4 @@ RUN sudo apt-get update \
 USER root
 
 # Cleaning
-RUN apt-get clean
+RUN sudo apt-get clean
