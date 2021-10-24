@@ -3,8 +3,8 @@ image:
 
 tasks:
     - name: Download Nextflow Tutorial
-    command: |
-      echo 'Starting workspace !'
+      command: |
+        echo 'Starting workspace !'
 
 
 ports:
