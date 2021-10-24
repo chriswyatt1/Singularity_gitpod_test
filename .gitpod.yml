@@ -2,6 +2,7 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+    - init: dep ensure
     - name: Download Nextflow Tutorial
       command: |
         echo 'Starting workspace !'
