@@ -5,11 +5,11 @@ USER gitpod
 RUN brew install dep
 
 # Install util tools.
-RUN sudo apt-get update \
- && sudo apt-get install -y
+RUN sudo apt-get update \ && 
+    sudo apt-get install -y
 
 # Install singularity dependencies.
-RUN sudo apt-get update && 
+RUN sudo apt-get update \ && 
     sudo apt-get install -y \ &&
     build-essential \ &&
     libssl-dev \ &&
