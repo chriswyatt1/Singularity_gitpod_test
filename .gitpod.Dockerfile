@@ -17,8 +17,6 @@ RUN wget https://github.com/sylabs/singularity/releases/download/v3.8.1/singular
     ./mconfig && \
     make -C ./builddir && \
     sudo make -C ./builddir install
-    
-RUN cd && rm -rf singularity-ce-3.8.*  
 
 RUN echo ". /usr/local/etc/bash_completion.d/singularity" >> ${HOME}/.bashrc
 
