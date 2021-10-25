@@ -17,7 +17,6 @@ RUN wget https://github.com/sylabs/singularity/releases/download/v3.8.1/singular
     ./mconfig --without-suid && \
     make -C ./builddir && \
     sudo make -C ./builddir install
-    sudo apt install squashfs-tools
 
 RUN echo ". /usr/local/etc/bash_completion.d/singularity" >> ${HOME}/.bashrc
 
