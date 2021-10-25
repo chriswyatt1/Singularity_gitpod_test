@@ -5,8 +5,13 @@ USER gitpod
 RUN brew install dep
 
 # Install util tools.
-RUN sudo apt-get update \ && 
-    sudo apt-get install -y
+RUN RUN apt-get update \ && 
+    apt-get install -y \ && 
+    apt-utils \ && 
+    sudo \ && 
+    git \ && 
+    less \ && 
+    wget
 
 # Install singularity dependencies.
 RUN sudo apt-get update \ && 
