@@ -5,7 +5,7 @@ USER gitpod
 RUN brew install dep
 
 # Install util tools.
-RUN RUN apt-get update \ && 
+RUN apt-get update \ && 
     apt-get install -y \ && 
     apt-utils \ && 
     sudo \ && 
